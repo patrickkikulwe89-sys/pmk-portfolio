@@ -279,8 +279,19 @@ footer {
   border-top: 4px solid var(--ug-red);
 }
 
+
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Puts the logo on top, menu below */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
   .nav-links {
-    display: none; /* simple mobile fallback, handled by JS later if needed */
+    display: flex;        
+    flex-wrap: wrap;       /* Allows links to drop to a new line if tight */
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.9rem;     /* Makes text slightly smaller for small screens */
   }
 }
