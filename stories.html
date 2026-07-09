@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - Patrick Mutyaba Kikulwe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        .stories-container {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .stories-sidebar {
+            flex: 0 0 300px;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 100px;
+        }
+
+        .stories-sidebar h3 {
+            margin-bottom: 1rem;
+            color: var(--ug-black);
+            font-family: var(--font-serif);
+            border-bottom: 2px solid var(--ug-yellow);
+            padding-bottom: 0.5rem;
+        }
+
+        .story-btn {
+            width: 100%;
+            text-align: left;
+            padding: 1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-family: var(--font-main);
+            font-size: 1rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid transparent;
+        }
+
+        .story-btn:hover {
+            background-color: var(--bg-color);
+        }
+
+        .story-btn.active {
+            background-color: var(--bg-color);
+            border-left: 4px solid var(--ug-red);
+            font-weight: 600;
+        }
+
+        .stories-content {
+            flex: 1;
+            min-width: 0; /* prevents flex blowout */
+        }
+
+        .story-pane {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .story-pane.active {
+            display: block;
+        }
+
+        .story-title {
+            color: var(--ug-black);
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .story-meta {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-style: italic;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .stories-container {
+                flex-direction: column;
+            }
+            .stories-sidebar {
+                flex: none;
+                width: 100%;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Under Development Banner -->
+    <div class="dev-banner">
+        <span class="dot"></span>
+        &nbsp;This site is currently <strong>Under Development</strong>. Some sections may be incomplete.&nbsp;
+        <span class="dot"></span>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">PMK</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Bio</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="marriage.html">Family & Life</a></li>
+                <li><a href="beliefs.html">Beliefs</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="stories.html" class="active">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 3rem 2rem; margin-bottom: 2rem;">
+            <h1>My Stories</h1>
+            <p>Life is full of unexpected turns, lessons learned, and profound experiences. Select a story from the menu to read more.</p>
+        </section>
+
+        <div class="stories-container">
+            <!-- Left Sidebar Navigation -->
+            <aside class="stories-sidebar">
+                <h3>Story Index</h3>
+                <nav id="story-nav">
+                    <button class="story-btn active" data-target="story-1">The Day Before I Got Married</button>
+                    <button class="story-btn" data-target="story-2">Experiences in the LDS Church</button>
+                    <button class="story-btn" data-target="story-3">Why I Left a Certain Job</button>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="stories-content card">
+                
+                <!-- Story 1 -->
+                <article id="story-1" class="story-pane active">
+                    <h2 class="story-title">The Day Before I Got Married</h2>
+                    <div class="story-meta">Category: Life & Family | June 2021</div>
+                    <p>A story about how I ended up getting arrested the day before my wedding due to an "alleged" COVID-19 guidelines violation, and the miracle of making it to the altar the very next day.</p>
+                    <p style="margin-top: 2rem; color: var(--text-light);"><em>[Start writing your full story here...]</em></p>
+                </article>
+
+                <!-- Story 2 -->
+                <article id="story-2" class="story-pane">
+                    <h2 class="story-title">Experiences Serving in the LDS Church</h2>
+                    <div class="story-meta">Category: Faith & Beliefs</div>
+                    <p>Reflections on my spiritual journey and the profound experiences I've had serving in various callings in The Church of Jesus Christ of Latter-day Saints.</p>
+                    <p style="margin-top: 2rem; color: var(--text-light);"><em>[Start writing your full story here...]</em></p>
+                </article>
+
+                <!-- Story 3 -->
+                <article id="story-3" class="story-pane">
+                    <h2 class="story-title">Why I Left a Certain Place of Work</h2>
+                    <div class="story-meta">Category: Career & Integrity</div>
+                    <p>An honest reflection on standing by my values and integrity, and the difficult but necessary choices I've made in my professional career.</p>
+                    <p style="margin-top: 2rem; color: var(--text-light);"><em>[Start writing your full story here...]</em></p>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Patrick Mutyaba Kikulwe. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle switching stories -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.story-btn');
+            const panes = document.querySelectorAll('.story-pane');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons and panes
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    panes.forEach(pane => pane.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    // Show corresponding pane
+                    const targetId = button.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                    
+                    // Scroll to top of content on mobile
+                    if (window.innerWidth <= 768) {
+                        document.querySelector('.stories-content').scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
