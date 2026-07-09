@@ -68,6 +68,63 @@
                 </div>
             </div>
         </section>
+        <!-- ── Contact / Reach Out Form (Formspree) ───────── -->
+        <section class="card" style="margin-top: 3rem;">
+            <h2>Get In Touch</h2>
+            <p style="margin-bottom: 1.5rem;">Have something to say, a question, or just want to connect? Send me a message and I'll get back to you!</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--ug-black);">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="e.g. John Doe"
+                            style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: var(--font-main); font-size: 1rem; background: var(--bg-color); color: var(--text-color); outline: none; transition: border 0.3s ease;">
+                    </div>
+                    <div>
+                        <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--ug-black);">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="e.g. john@example.com"
+                            style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: var(--font-main); font-size: 1rem; background: var(--bg-color); color: var(--text-color); outline: none; transition: border 0.3s ease;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="subject" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--ug-black);">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="What's this about?"
+                        style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: var(--font-main); font-size: 1rem; background: var(--bg-color); color: var(--text-color); outline: none; transition: border 0.3s ease;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: var(--ug-black);">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."
+                        style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border-color); border-radius: 8px; font-family: var(--font-main); font-size: 1rem; background: var(--bg-color); color: var(--text-color); outline: none; resize: vertical; transition: border 0.3s ease;"></textarea>
+                </div>
+                <!-- Hidden field to catch bots -->
+                <input type="text" name="_gotcha" style="display: none;">
+                <button type="submit"
+                    style="background: var(--ug-red); color: white; border: none; padding: 0.85rem 2.5rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; font-family: var(--font-main); transition: background 0.3s ease;">
+                    Send Message
+                </button>
+                <p id="form-status" style="margin-top: 1rem; font-weight: 500; color: var(--ug-red);"></p>
+            </form>
+            <script>
+                const form = document.getElementById('contact-form');
+                const status = document.getElementById('form-status');
+                form.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (response.ok) {
+                        status.textContent = '✅ Message sent! I will get back to you soon.';
+                        status.style.color = 'green';
+                        form.reset();
+                    } else {
+                        status.textContent = '❌ Oops! Something went wrong. Please try again.';
+                    }
+                });
+            </script>
+        </section>
     </main>
 
     <footer>
