@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: patrickkikulwe89-sys/pmk-portfolio # Your exact repository
+  branch: main # The branch you want it to push to
+
+# This is where the CMS will save any images uploaded through the admin interface. It is relative to the base of your project.
+media_folder: "images" 
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.md"
+        fields:
+          # Hidden field keeps 11ty layout intact without me seeing it
+          - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Content", name: "body", widget: "markdown"}
+      
+      - label: "Work Page"
+        name: "work"
+        file: "work.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Content", name: "body", widget: "markdown"}
