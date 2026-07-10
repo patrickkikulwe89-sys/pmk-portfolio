@@ -147,11 +147,6 @@ title: Stories | Patrick Mutyaba Kikulwe
 
             </div>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Patrick Mutyaba Kikulwe. All Rights Reserved.</p>
-    </footer>
 
     <!-- JavaScript to handle switching stories -->
     <script>
