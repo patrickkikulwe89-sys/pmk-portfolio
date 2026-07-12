@@ -12,9 +12,10 @@
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
     
     <script>
-      CMS.init({
-        load_config_file: false, // <-- To tell Sveltia to stop looking for config.yml since I deleted it!
+      CMS.init({        
         config: {
+          load_config_file: false, // <-- To tell Sveltia to stop looking for config.yml since I deleted it!
+
           backend: {
             name: "github",
             repo: "patrickkikulwe89-sys/pmk-portfolio",
