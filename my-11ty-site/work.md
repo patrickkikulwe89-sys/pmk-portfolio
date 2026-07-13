@@ -4,7 +4,7 @@ title: Work | Patrick Mutyaba Kikulwe
 ---
 
 <section class="card">
-            <h2>**~~WWWWWWWWWWWWW~~**</h2>
+            <h2>Work Experiences</h2>
             <p>Patrick's strong work ethic was forged early. He began working at the age of 17, right after his O-levels in 2006, and has since built a diverse and rich professional background across various industries.</p>
 
             <div style="margin-top: 2rem;">
