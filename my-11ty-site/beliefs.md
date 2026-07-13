@@ -49,5 +49,6 @@ title: Beliefs | Patrick Mutyaba Kikulwe
                     <li>We believe in being subject to kings, presidents, rulers, and magistrates, in obeying, honoring, and sustaining the law.</li>
                     <li>We believe in being honest, true, chaste, benevolent, virtuous, and in doing good to all men; indeed, we may say that we follow the admonition of Paul—We believe all things, we hope all things, we have endured many things, and hope to be able to endure all things. If there is anything virtuous, lovely, or of good report or praiseworthy, we seek after these things.</li>
                 </ol>
+<p class="portfolio-citation" style="text-align: right;">&mdash; Joseph Smith, 1842</p>   
             </div>
         </section>
