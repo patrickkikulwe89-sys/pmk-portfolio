@@ -3,10 +3,10 @@ layout: base.njk
 title: Work | Patrick Mutyaba Kikulwe
 ---
 
-        <section class="card">
-            <h2>Work Experiences</h2>
+<section class="card">
+            <h2>**~~WWWWWWWWWWWWW~~**</h2>
             <p>Patrick's strong work ethic was forged early. He began working at the age of 17, right after his O-levels in 2006, and has since built a diverse and rich professional background across various industries.</p>
-            
+
             <div style="margin-top: 2rem;">
                 <h3 style="color: var(--ug-black); font-family: var(--font-serif);">Store Keeper @ KIAL</h3>
                 <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.5rem;">Juba, South Sudan | [Time Period To Be Updated]</p>
