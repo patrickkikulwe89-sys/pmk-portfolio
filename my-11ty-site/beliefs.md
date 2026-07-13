@@ -3,31 +3,31 @@ layout: base.njk
 title: Beliefs | Patrick Mutyaba Kikulwe
 ---
 
-        <section class="card">
+<section class="card">
             <h2>Faith & Religion</h2>
             <p>Patrick is a devoted member of <strong>The Church of Jesus Christ of Latter-day Saints</strong>, and his spiritual journey forms the cornerstone of his life.</p>
-            
+
             <div style="margin-top: 2rem;">
                 <h3 style="color: var(--ug-black); font-family: var(--font-serif);">Baptism & Conversion</h3>
                 <p>Patrick joined the Church in 2006 in what was then the Nsambya Branch. He was baptized by Brother Yudas Kintu and confirmed by Brother Tadeo Katamba during that same period. It was a memorable time, as the family of the Mbiras also had some of their children joining the Church alongside him.</p>
             </div>
-            
+
             <div style="margin-top: 2rem;">
                 <h3 style="color: var(--ug-black); font-family: var(--font-serif);">Callings & Service</h3>
                 <p>Throughout his time in the Church, Patrick has faithfully served in a wide variety of callings, including:</p>
                 <ul style="margin-top: 1rem; margin-left: 2rem; color: var(--text-color);">
-                    <li>Mission Presidency First and Second Counselor</li>
-                    <li>Stake Executive Secretary</li>
-                    <li>Secretary to the Stake Patriarch</li>
-                    <li>High Counselor</li>
-                    <li>Stake Young Men President</li>
-                    <li>Stake Technology Specialist</li>
-                    <li>Stake Assistant Clerk</li>
-                    <li>Ward Assistant Clerk</li>
-                    <li>Sunday School Presidency Second Counselor</li>
-                    <li>Temple Worker</li>
-                    <li>Logistics Administrator at the Church's Youth Conference (FSY)</li>
-                    <li>BYU-PW Service Missionary</li>
+                   <li>Temple Worker (2025 - )</li>
+                   <li>Mission Presidency First and Second Counselor (2022 - )</li>
+                   <li>Logistics Administrator at the Church's Youth Conference (2022)</li>
+                   <li>Mission Auditor (2021 - 2025)</li>
+                   <li>BYU-PW Service Missionary (2021 - 2023)</li>
+                   <li>Secretary to the Stake Patriarch (2021 - 2022)</li>
+                   <li>High Counselor (2021 - 2022)</li>
+                   <li>Stake Technology Specialist (2018 - 2022)</li>
+                   <li>Stake Executive Secretary (2018 - 2021)</li>
+                   <li>Stake Young Men President (2017 - 2018)</li>
+                   <li>Ward Assistant Clerk (2015 - 2016)</li>
+                   <li>Branch Sunday School Presidency Counselor (2007 - 2009)</li>
                 </ul>
             </div>
 
