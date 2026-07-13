@@ -1,14 +1,21 @@
 module.exports = function(eleventyConfig) {
-  // Eleventy to copy my CSS and JS folders to the final build
+  // Copy CSS and JS folders to the final build
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  eleventyConfig.addPassthroughCopy("admin"); // <-- This line allows the admin folder to be copied to the output directory
+  
+  // Copy the admin folder so the CMS works on the live site
+  eleventyConfig.addPassthroughCopy("admin"); 
+
+  // Map the CMS images folder to the root so pictures show up properly
+  eleventyConfig.addPassthroughCopy({
+    "my-11ty-site/images": "images"
+  });
 
   return {
     dir: {
       input: ".",
       includes: "_includes",
-      output: "_site" // This is where the final compiled site will go
+      output: "_site" // Final compiled site will go here - and over server
     }
   };
 };
