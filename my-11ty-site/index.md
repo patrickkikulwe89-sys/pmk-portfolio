@@ -2,17 +2,18 @@
 layout: base.njk
 title: Patrick Mutyaba Kikulwe | Software Developer in Uganda
 ---
+
 <section>
     <h1>Patrick Mutyaba Kikulwe</h1>
-    <p>Welcome to the personal portfolio of PMK (aka Rickie, Ssuuna Jnr., Ka-engine). Software Developer, Family Man, and Believer.</p>
+    <p>Welcome to the personal portfolio of PMK (aka Rickie, Ssuuna Jnr., Ka-engine). Software Developer, Family Man, and Believer. _“I’m the trusted human who knows how to get this done… with AI in the toolkit, but not as a substitute for craft and judgment.” -Risley (Blog Marketing)_</p>
 </section>
 
 <section>
     <h2>Personal Bio</h2>
-    
+
     <h3>Origins & Identity</h3>
     <p>I was born in 1989 at Nsambya Hospital to Mr. and Mrs. John Baptist Ssuuna Walugembe of Kibuye, Kampala, Uganda. I lived briefly with my paternal grandmother until age 3, and then grew up at my paternal grandfather's home until I married my wonderful wife, Mrs. Kikulwe, on June 30, 2021. Over the years, I've gathered a few nicknames: <strong>Rickie</strong> (from my youth), <strong>Ssuuna Jnr.</strong> (which I derived from my father's last name), and <strong>Ka-engine</strong>, given to me by colleagues at Fang Fang Restaurant due to my swift, tireless, and hardworking nature. I have always loved to work, regardless of the industry.</p>
-    
+
     <h3>The Spark of Technology</h3>
     <p>My love for technology started early. Around the age of 10, people in my community would bring me their faulty cellphones, and to my own surprise, I was actually able to fix them. I didn't even know what an "IT course" meant back then, but I knew I wanted to do it. During my O-levels, friends and I would frequent an internet cafe in Bakuli to surf the web. Friends like Steven Maina (a PLE O.B.) and Jeff helped sharpen my skills in my early twenties. And a special blessing goes to my "Muvabulaaya" grandpa who helped me acquire my very first official credential in tech.</p>
 
